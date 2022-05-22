@@ -1,1 +1,38 @@
-<h1>Hello world!</h1>
+<h1>Personal CRM</h1>
+<!---
+<nav>
+  <ul>
+    <li>
+      <a routerLink="/contacts" routerLinkActive="active"> Contacts </a>
+    </li>
+    <li>
+      <a routerLink="/todo" routerLinkActive="active"> To do's </a>
+    </li>
+    <li>
+      <a routerLink="/notes" routerLinkActive="active"> Notes </a>
+    </li>
+    <li>
+      <a routerLink="/upcomingReminders" routerLinkActive="active">
+        Upcoming Reminders
+      </a>
+    </li>
+  </ul>
+</nav>
+
+<router-outlet></router-outlet>
+--->
+
+<mdb-tabs>
+  <mdb-tab title="Contacts">
+    <app-contacts></app-contacts>
+  </mdb-tab>
+  <mdb-tab title="To do's">
+    <app-todos></app-todos>
+  </mdb-tab>
+  <mdb-tab title="Notes">
+    <app-notes></app-notes>
+  </mdb-tab>
+  <mdb-tab title="Upcoming Reminders">
+    <app-upcoming-reminders></app-upcoming-reminders>
+  </mdb-tab>
+</mdb-tabs>
