@@ -7,7 +7,7 @@ import { ContactsComponent } from './contacts/contacts.component';
 import { TodosComponent } from './todos/todos.component';
 import { NotesComponent } from './notes/notes.component';
 import { UpcomingRemindersComponent } from './upcoming-reminders/upcoming-reminders.component';
-import { MdbTabsModule } from 'mdb-angular-ui-kit/tabs';
+//import { MdbTabsModule } from 'mdb-angular-ui-kit/tabs';
 @NgModule({
   declarations: [
     AppComponent,
@@ -16,7 +16,11 @@ import { MdbTabsModule } from 'mdb-angular-ui-kit/tabs';
     NotesComponent,
     UpcomingRemindersComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, MdbTabsModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    //MdbTabsModule
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })
