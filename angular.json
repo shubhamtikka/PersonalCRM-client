@@ -29,9 +29,11 @@
               "src/assets"
             ],
             "styles": [
+              "./node_modules/bootstrap/dist/css/bootstrap.css",
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": ["./node_modules/jquery/dist/jquery.js",              
+"./node_modules/bootstrap/dist/js/bootstrap.js" ]
           },
           "configurations": {
             "production": {
@@ -41,7 +43,12 @@
                   "with": "src/environments/environment.prod.ts"
                 }
               ],
-              "optimization": true,
+              "optimization": {
+                  "scripts": true,
+                  "styles": {
+                  "minify": true,
+                  "inlineCritical": false
+               }},
               "outputHashing": "all",
               "sourceMap": false,
               "namedChunks": false,

@@ -1,18 +1,28 @@
 <h1>Personal CRM</h1>
 
 <nav>
-  <ul>
-    <li>
-      <a routerLink="/contacts" routerLinkActive="active"> Contacts </a>
+  <ul class="nav nav-tabs">
+    <li class="nav-item">
+      <a class="nav-link" routerLink="/contacts" routerLinkActive="active">
+        Contacts
+      </a>
     </li>
-    <li>
-      <a routerLink="/todo" routerLinkActive="active"> To do's </a>
+    <li class="nav-item">
+      <a class="nav-link" routerLink="/todo" routerLinkActive="active">
+        To do's
+      </a>
     </li>
-    <li>
-      <a routerLink="/notes" routerLinkActive="active"> Notes </a>
+    <li class="nav-item">
+      <a class="nav-link" routerLink="/notes" routerLinkActive="active">
+        Notes
+      </a>
     </li>
-    <li>
-      <a routerLink="/upcomingReminders" routerLinkActive="active">
+    <li class="nav-item">
+      <a
+        class="nav-link"
+        routerLink="/upcomingReminders"
+        routerLinkActive="active"
+      >
         Upcoming Reminders
       </a>
     </li>
@@ -20,7 +30,23 @@
 </nav>
 
 <router-outlet></router-outlet>
+
 <!---
+
+<ul class="nav nav-tabs">
+  <li class="nav-item">
+    <a class="nav-link active" aria-current="page" href="#">Active</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link active" aria-current="page" href="#">Active</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link active" aria-current="page" href="#">Active</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link active" aria-current="page" href="#">Active</a>
+  </li>
+</ul>
 
 <mdb-tabs>
   <mdb-tab title="Contacts">
